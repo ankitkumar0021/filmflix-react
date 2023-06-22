@@ -16,7 +16,7 @@ function App() {
   const [userName, setUserName] = useState("");
 
   return (
-    <Appstate.Provider value={{login, userName, setLogin, setUserName}} >
+    <Appstate.Provider value={{login, userName, setLogin, setUserName}} basename="/filmflix-react" >
     <div className="App relative">
       <Header />
       <Routes>

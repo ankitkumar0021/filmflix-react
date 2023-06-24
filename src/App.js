@@ -16,7 +16,11 @@ function App() {
   const [userName, setUserName] = useState("");
 
   return (
+<<<<<<< HEAD
     <Appstate.Provider value={{login, userName, setLogin, setUserName}} basename="/filmflix-react">
+=======
+    <Appstate.Provider value={{login, userName, setLogin, setUserName}} basename="/filmflix-react" >
+>>>>>>> 0923552864273485002fa961fd0428e806aacdd6
     <div className="App relative">
       <Header />
       <Routes>

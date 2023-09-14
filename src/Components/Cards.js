@@ -5,7 +5,7 @@ import { getDocs } from "firebase/firestore";
 import { moviesRef } from "../firebase/firebase";
 import { Link } from "react-router-dom";
 
-const Cards = () => {
+const Cards = () => { 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 

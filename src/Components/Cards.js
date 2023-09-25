@@ -4,8 +4,13 @@ import ReactStars from "react-stars";
 import { getDocs } from "firebase/firestore";
 import { moviesRef } from "../firebase/firebase";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 
 const Cards = () => { 
+=======
+// cards
+const Cards = () => {
+>>>>>>> eb5f1beb5eda3782ea619675cd064dfaf929caa7
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -26,14 +31,14 @@ const Cards = () => {
       {loading ? (
         <div className="w-full flex justify-center items-center h-96">
           <Vortex
-  visible={true}
-  height="80"
-  width="80"
-  ariaLabel="vortex-loading"
-  wrapperStyle={{}}
-  wrapperClass="vortex-wrapper"
-  colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
-/>
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="vortex-loading"
+            wrapperStyle={{}}
+            wrapperClass="vortex-wrapper"
+            colors={["red", "green", "blue", "yellow", "orange", "purple"]}
+          />
         </div>
       ) : (
         data.map((e, i) => {
